@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivity"
+
+    android:background="@drawable/menu_background"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kullanıcı: Bilgiler yükleniyor..."
+        android:textSize="18sp"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        android:padding="18dp"
+        android:id="@+id/userInfoText"/>
+
+    <LinearLayout
+        android:id="@+id/menuButtonsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userInfoText"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Yeni Oyun"
+            android:backgroundTint="#8A74E2"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:padding="12dp"
+            android:textSize="18sp"
+            android:id="@+id/newgame_btn"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aktif Oyunlar"
+            android:backgroundTint="#8A74E2"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:padding="12dp"
+            android:textSize="18sp"
+            android:id="@+id/activegames_btn"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Biten Oyunlar"
+            android:backgroundTint="#8A74E2"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:padding="12dp"
+            android:textSize="18sp"
+            android:id="@+id/endedgames_btn"/>
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Çıkış Yap"
+        android:backgroundTint="#E27474"
+        android:textSize="18dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/logoff_btn"/>
+
+</RelativeLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewGameActivity"
+    android:background="@drawable/menu_background"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:id="@+id/newgame_menu">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hızlı Oyun"
+        android:textSize="24dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:padding="16dp"
+        android:gravity="center"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2 Dakika"
+            android:backgroundTint="#8A74E2"
+            android:padding="16dp"
+            android:layout_marginTop="20dp"
+            android:textSize="18dp"
+            android:id="@+id/newgame2m_btn"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5 Dakika"
+            android:backgroundTint="#8A74E2"
+            android:padding="16dp"
+            android:layout_marginTop="20dp"
+            android:textSize="18dp"
+            android:id="@+id/newgame5m_btn"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Genişletilmiş Oyun"
+            android:layout_marginTop="20dp"
+            android:textSize="24dp"
+            android:textColor="@color/white"
+            android:padding="16dp"
+            android:gravity="center"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="12 Saat"
+            android:backgroundTint="#8A74E2"
+            android:padding="16dp"
+            android:layout_marginTop="20dp"
+            android:textSize="18dp"
+            android:id="@+id/newgame12h_btn"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="24 Saat"
+            android:backgroundTint="#8A74E2"
+            android:padding="16dp"
+            android:layout_marginTop="20dp"
+            android:textSize="18dp"
+            android:id="@+id/newgame24h_btn"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Geri Dön"
+        android:backgroundTint="#E27474"
+        android:textSize="18dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/return_btn"/>
+
+</RelativeLayout>

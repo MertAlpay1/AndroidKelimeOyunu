@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityEndedGame"
+    android:background="@drawable/menu_background">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/top"
+        android:paddingTop="50dp">
+
+
+        <TextView
+            android:id="@+id/txtTotalScore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Toplam Puan: "
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/txtRemainingLetters"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Kalan Harf Sayısı: "
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/txtOpponentScore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Rakip Skoru: "
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/txtWinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Kazanan: "
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:textColor="@android:color/white" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/top"
+        android:paddingTop="40dp"
+        android:id="@+id/bottom">
+
+        <TextView
+            android:id="@+id/txtPuanBolunmesi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Mayına Basıldı mı: "
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:textColor="@android:color/white" />
+        <TextView
+            android:id="@+id/txtPuanTransferi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Mayına Basıldı mı: "
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:textColor="@android:color/white" />
+        <TextView
+            android:id="@+id/txtHarfKaybı"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Mayına Basıldı mı: "
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:textColor="@android:color/white" />
+        <TextView
+            android:id="@+id/txtEkstraHamleEngeli"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Mayına Basıldı mı: "
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:textColor="@android:color/white" />
+        <TextView
+            android:id="@+id/txtKelimeİptali"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Mayına Basıldı mı: "
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:textColor="@android:color/white" />
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
